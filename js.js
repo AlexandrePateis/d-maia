@@ -27,12 +27,13 @@ function selecionarAluna(id, perguntaAtual, proximaPergunta) {
     var botao = document.getElementById(id);
     botao.classList.remove('btn-warning');
     botao.classList.add('btn-success');
+    document.querySelector('#acerto').classList.remove('d-none');
     setTimeout(() => {
         // Oculta a pergunta atual
         document.querySelector(perguntaAtual).classList.add('d-none');
         // Mostra a próxima pergunta
         document.querySelector(proximaPergunta).classList.remove('d-none');
-    }, 1000);
+    }, 2000);
 }
 
 var clickCount = 0;
