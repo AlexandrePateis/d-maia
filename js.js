@@ -9,7 +9,7 @@ function moverBotao() {
     if (contadorCliques === 1) {
         contadorCliques++;
       } else {
-        botao.innerText = "É aqui ó !!!";
+        botao.innerText = "É aqui ó!!!";
          // Adicionar evento de clique para a transição suave para a próxima página
          botao.onclick = function() {
             $(botao).fadeOut(1000); // Esconde o botão em 1 segundo
@@ -37,7 +37,7 @@ function selecionarAluna(id, perguntaAtual, proximaPergunta) {
 }
 
 var clickCount = 0;
-var buttonNames = ["Vamos lá, você consegue", "Não vai desistir tão fácil né ?", "Sou o último botão", "Ala, acreditou kkk", "Agora é sério"];
+var buttonNames = ["Vamos lá, você consegue", "Não vai desistir tão fácil né?", "Sou o último botão", "Ala, acreditou kkk", "Agora é sério"];
 
 function moveButton5times() {
     var button = document.getElementById("botao-final");
