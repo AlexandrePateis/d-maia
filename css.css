@@ -27,7 +27,7 @@
 }
 
 .animation-text{
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 8em;
 }
@@ -42,7 +42,7 @@
     margin: 10px 0 0 10px;
     white-space: nowrap;
     overflow: hidden;
-    width: 30em;
+    width: 50em;
     animation: type 4s steps(60, end); 
     text-align: center;
   }
@@ -123,7 +123,12 @@ footer{
     margin-top: 15em;
 }
 .message-finally{
-    width: 60%;
+    width: 70%;
     margin: 0 auto;
     text-align: justify;
+    font-size: 1.5em;
+}
+.title-final-da
+{
+    font-size: 5em;
 }
