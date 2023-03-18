@@ -1,0 +1,105 @@
+*{
+    font-family: 'Righteous', cursive;
+}
+.my-bg-color{
+    background-color: rgb(0, 0, 0);
+}
+.content, .init-game{
+    width: 70%;
+    margin: 0 auto;
+}
+.perguntas{
+    width: 50%;
+    margin: 0 auto;
+}
+.botao-div{
+    margin: 0 auto;
+    width: 70%;
+}
+.title, .title-p{
+    text-align:center;
+}
+
+.animation-text{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 8em;
+}
+.positon-button{
+    margin-top: 2em;
+    text-align: center;
+}
+.text-animation{
+    color: rgb(255, 255, 255); 
+    font-family: "Courier";
+    font-size: 20px;
+    margin: 10px 0 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 30em;
+    animation: type 4s steps(60, end); 
+    text-align: center;
+  }
+  
+ .text-animation:nth-child(2){
+    animation: type2 8s steps(60, end);
+  }
+  
+  
+  span{
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
+  
+  @keyframes type2{
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 100; } 
+  } 
+  
+  @keyframes blink{
+    to{opacity: .0;}
+  }
+  
+  ::selection{
+    background: black;
+  }
+.title-quests{
+    font-size: 3em;
+    text-align: center;
+}
+.quest-finaly{
+    margin-top: 2em;
+}
+.mar-top{
+    margin-top: 2em;
+}
+.title-quests-finaly{
+    text-align: center;
+    font-size: 2em;
+    margin-top: 2em;
+}
+
+.btn-fixed-width{
+    width: 300px;
+}
+ul{
+    list-style: none;
+}
+.quest-finaly {
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .proxima-pergunta {
+    transition: opacity 1s ease-in-out;
+    opacity: 0; /* Inicia a próxima pergunta com opacidade 0 */
+    display: none; /* Inicia a próxima pergunta como oculta */
+  }
+  
+  .proxima-pergunta.mostrar {
+    display: block;
+    opacity: 1; /* Altera a opacidade da próxima pergunta para 1 quando ela é mostrada */
+  }
